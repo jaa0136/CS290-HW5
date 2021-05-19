@@ -1,0 +1,31 @@
+<h1>POST Request Received</h1>
+{{#if dataList1}}
+<table>
+    <caption>URL Data</caption>
+    <thead>
+        <tr>
+        <th> Name
+        <th> Value
+    <tbody>
+        {{#each dataList1}}
+        <tr>
+        <td> {{this.name}}
+        <td> {{this.value}}
+        {{/each}}
+</table>
+<br>
+<br>
+{{/if}}
+<table>
+    <caption>POST Data</caption>
+    <thead>
+        <tr>
+        <th> Name
+        <th> Value
+    <tbody>
+        {{#each dataList2}}
+        <tr>
+        <td> {{this.name-post}}
+        <td> {{this.value-post}}
+        {{/each}}
+</table>
